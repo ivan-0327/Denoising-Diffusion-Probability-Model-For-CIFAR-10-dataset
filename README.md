@@ -10,12 +10,12 @@ The **DDPM** shares its mathematical foundation with *Variational AutoEncoder (V
   The thesis author's major contribution is the training algorithm. They transformed complex mathematical statistics into a more practical form where the model predicts noise directly.
   As a result, **DDPM**'s training algorithm enables it to require training only for Decoder .
   
-    ![image.png](C:\Users\User\Downloads\MDfile_DDPM\image.png)
+    ![image.png](C:\Users\User\OneDrive\文件\GitHub\Denoising-Diffusion-Probability-Model-For-CIFAR-10-dataset\image\image.png)
 
 - Sampling
   When we aim to synthesize or generate images , the algorithm differs from training process. In DDPM, teh authors assume that the total steps of generation steps is large(e.g. one thousand).   The process involves progressively donoising a sampled vector from a standard normal distrubution , step by step . Eventually , upon completing the denoising process , we obtain a clear image.
   
-    ![image.png](C:\Users\User\Downloads\MDfile_DDPM\image%201.png)
+    ![image.png](C:\Users\User\OneDrive\文件\GitHub\Denoising-Diffusion-Probability-Model-For-CIFAR-10-dataset\image\image%201.png)
 
 # Metrics for Images generation
 
@@ -36,11 +36,6 @@ The **DDPM** shares its mathematical foundation with *Variational AutoEncoder (V
    FID=$|\mu_1−\mu_2 |+T𝑟(\sigma_1+\sigma_2−2√(\sigma_1∗\sigma_2 ))$
    
    A smaller FID indicates that the distribution of generated images is closer to that of real images , suggesting better performance of the generative model.
-
-
-
-
-
 - **IS (Inception Score)**:
   The Inception Score evaluates two keys aspects : clarity and diversity.
 1. **Clarity**: 
@@ -51,14 +46,14 @@ The **DDPM** shares its mathematical foundation with *Variational AutoEncoder (V
 2. **Diversity** :
    If the generated images from the mode are sufficiently diverse, the probability distribution across all categories should be uniform. For example, if the model generates 10000 images, the ideal case is that each of the 1000 categories has exactly 10 images . In mathematical terms , this means that the entropy of the marginal distribution P(y) , which represents the probability of each category, is maximized .
    
-   ![image 2.png](C:\Users\User\Downloads\MDfile_DDPM\image%202.png)
+   ![image 2.png](C:\Users\User\OneDrive\文件\GitHub\Denoising-Diffusion-Probability-Model-For-CIFAR-10-dataset\image\image%202.png)
    **the completely term is** :
    
-   ![image.png](C:\Users\User\Downloads\MDfile_DDPM\image%203.png)
+   ![image.png](C:\Users\User\OneDrive\文件\GitHub\Denoising-Diffusion-Probability-Model-For-CIFAR-10-dataset\image\image%203.png)
 
 # Result
 
-![652000.png](C:\Users\User\Downloads\MDfile_DDPM\652000.png)
+![652000.png](C:\Users\User\OneDrive\文件\GitHub\Denoising-Diffusion-Probability-Model-For-CIFAR-10-dataset\image\652000.png)
 
 # Reference
 
