@@ -37,7 +37,7 @@ The **DDPM** shares its mathematical foundation with *Variational AutoEncoder (V
    b. $\mu_2,\sigma_2:$ Mean vector and covariance matrix for the generated dataset.
 
 4. **Calculate FID**:
-   FID=$|\mu_1−\mu_2 |+T𝑟(\sigma_1+\sigma_2−2√(\sigma_1∗\sigma_2 ))$
+   FID= $|\mu_1−\mu_2 |+T𝑟(\sigma_1+\sigma_2−2√(\sigma_1∗\sigma_2 ))$ 
    
    A smaller FID indicates that the distribution of generated images is closer to that of real images , suggesting better performance of the generative model.
 - **IS (Inception Score)** :
