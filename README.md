@@ -12,7 +12,7 @@ The **DDPM** shares its mathematical foundation with *Variational AutoEncoder (V
   
     ![image.png](./images/image.png)
 
-- Sampling
+- **Sampling :**
   When we aim to synthesize or generate images , the algorithm differs from training process. In DDPM, teh authors assume that the total steps of generation steps is large(e.g. one thousand).   The process involves progressively donoising a sampled vector from a standard normal distrubution , step by step . Eventually , upon completing the denoising process , we obtain a clear image.
   
     ![image.png](./images/image%201.png)
