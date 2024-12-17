@@ -32,12 +32,7 @@ def eval(arg):
 
 def evaluate(sampler, model ,arg):
     model.eval()
-    ## 看完記得刪除
-    images = []
-    (IS, IS_std), FID = get_inception_and_fid_score(
-        images, arg.fid_cache, num_images=arg.num_images,
-        use_torch=arg.fid_use_torch, verbose=True)
-    ##
+    
     with torch.no_grad():
         images = []
         desc = "generating images"
