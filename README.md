@@ -57,6 +57,7 @@ The **DDPM** shares its mathematical foundation with *Variational AutoEncoder (V
 
 # Result
  **IS: 8.463(0.217), FID: 10.408**
+ 
 ![652000.png](./images/652000.png)
 
 # Reference
